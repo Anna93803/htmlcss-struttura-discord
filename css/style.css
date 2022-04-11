@@ -1,0 +1,155 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 1.875rem 0;
+}
+
+:root {
+    --bg-col-main: #1e90ff;
+    --bg-col-main-p: #ffb6c1; 
+    --bg-col-bottom: #f08080;
+    
+}
+
+/* Header */
+header {
+    background-color: #add8e6;
+    min-height: 3.125rem;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #daa520;
+    align-items: center;
+    min-height: 2.1rem;
+}
+
+header .container > div {
+    padding: 10px 0;
+}
+
+.logo, .login {
+    flex-grow: 1;
+    padding: 0 .375rem;
+}
+
+.login {
+    text-align: right;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.links li {
+    list-style: none;
+    padding: 0 1.25rem;
+}
+
+.jumbo {
+    background-color: #00008b;
+    min-height: calc(27.625rem - 3.125rem);
+    padding: 1.875rem 0;
+}
+
+.small-container {
+    max-width: 37.5rem;
+    min-height: 18.75rem;
+    margin: 0 auto;
+    background-color: #ee82ee;
+}
+/* Main */
+
+.col-1 {
+    background-color: var(--bg-col-main);
+    min-height: 18.75rem;
+    flex-grow: 2;
+}
+
+.col-2 {
+    background-color: var(--bg-col-main-p);
+    min-height: 18.75rem;
+    flex-grow: 1;
+    
+}
+
+.d-flex {
+    display: flex;
+    align-items: stretch;
+}
+
+.section:nth-child(2), .section:nth-child(4){
+    background-color: #d3d3d3;
+}
+
+.d-flex.reverse {
+    flex-direction: row-reverse;
+}
+
+.col-green {
+    background-color: #228b22;
+    min-height: 31.25rem;
+}
+/* footer */
+footer {
+    background-color: #23272a;
+}
+
+.footer-top, .footer-bottom {
+    display: flex;
+    padding: 1.25rem 0;
+}
+.foot-col-1,
+.foot-col-2,
+.foot-col-3,
+.foot-col-4,
+.foot-col-5 {
+    min-height: 25rem;
+    border: 1px solid black;
+}
+
+.foot-col-1 {
+    flex-grow: 3;
+    background-color: var(--bg-col-bottom);
+}
+
+.foot-col-2,
+.foot-col-3,
+.foot-col-4,
+.foot-col-5 {
+    flex-grow: 1;
+    background-color: #20b2aa;
+}
+
+.footer-bottom {
+    background-color: #7fffd4;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.col-logo, .col-button {
+    background-color: var(--bg-col-bottom);
+    padding: .3125rem;
+}
+
+hr {
+    color: white;
+    margin-top: 1.25rem;
+}
+
+
